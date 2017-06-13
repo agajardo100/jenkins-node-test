@@ -1,13 +1,21 @@
 {
   "name": "docker_jenkins_test",
   "version": "1.0.0",
-  "description": "Node.js on Docker",
+  "license": "MIT",
+  "repository": {},
+  "description": "Node.js on Docker with Jenkins",
   "author": "Andres Gajardo",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "mocha"
   },
   "dependencies": {
-    "express": "^4.13.3"
+    "chai": "^4.0.2",
+    "express": "^4.13.3",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.4.2",
+    "should": "^11.2.1"
   }
+  
 }
